@@ -38,7 +38,7 @@
                                 <td>Cortez</td>
                                 <td>9999</td>
                                 <td>
-                                    <a href="#" class="btn btn-info">Ver</a>
+                                    <a href="{{ route('verContactos', ['codigoEntrada' => $entrada->codigoEntrada]) }}" class="btn btn-info">Ver</a>
                                 </td>
                                 <td>
                                     <a href="#" class="btn btn-danger">Eliminar</a>

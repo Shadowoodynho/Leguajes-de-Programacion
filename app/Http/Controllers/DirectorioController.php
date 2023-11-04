@@ -22,5 +22,11 @@ class DirectorioController extends Controller
     {
         return view('buscarEntrada');
     }
+    public function verContactos($codigoEntrada)
+    {
+        $entrada = Entrada::where('codigoEntrada', $codigoEntrada)->first();
+        $contactos = Contacto::where('codigoEntrada', $codigoEntrada)->get();
 
+        return view('vercontactos', compact('entrada', 'contactos'));
+    }
 }

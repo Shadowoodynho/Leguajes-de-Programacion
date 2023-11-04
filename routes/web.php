@@ -23,3 +23,5 @@ Route::get('directorio/crear-entrada', [DirectorioController::class, 'crearEntra
 
 Route::get('directorio/buscar-entrada', [DirectorioController::class, 'buscarEntrada'])->name('buscarEntrada');
 
+Route::get('directorio/ver-contactos/{codigoEntrada}', [DirectorioController::class, 'verContactos'])->name('verContactos');
+
